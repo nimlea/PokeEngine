@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{a3311610-6404-44d4-868c-318cd6dc8321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Binary">
+      <UniqueIdentifier>{5b2632c6-dd66-4131-929a-ceadb2b1944f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="d3dx11dbg.cpp" />
+    <ClCompile Include="d3dxGlobal.cpp" />
+    <ClCompile Include="EffectAPI.cpp" />
+    <ClCompile Include="EffectLoad.cpp" />
+    <ClCompile Include="EffectNonRuntime.cpp" />
+    <ClCompile Include="EffectReflection.cpp" />
+    <ClCompile Include="EffectRuntime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="EffectLoad.h" />
+    <ClInclude Include="pchfx.h" />
+    <ClInclude Include="Binary\EffectBinaryFormat.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary\EffectStateBase11.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary\EffectStates11.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary\SOParser.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\d3dx11dbg.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\d3dx11effect.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\d3dxGlobal.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EffectVariable.inl" />
+  </ItemGroup>
+</Project>
