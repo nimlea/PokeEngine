@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{89401B5B-716E-4792-A3FE-66842BF88475}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{A419D65C-786A-4252-AA38-F08F7DEA38CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PokeEngine", "Engine\PokeEngine\PokeEngine.vcxproj", "{79AC5713-595B-4C9A-A3C4-41DFFBB9D796}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXTK", "Libs\DirectXTK\DirectXTK.vcxproj", "{828DB8A3-398A-4659-BB1B-8CAD4F83FBC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79AC5713-595B-4C9A-A3C4-41DFFBB9D796}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79AC5713-595B-4C9A-A3C4-41DFFBB9D796}.Debug|Win32.Build.0 = Debug|Win32
+		{79AC5713-595B-4C9A-A3C4-41DFFBB9D796}.Release|Win32.ActiveCfg = Release|Win32
+		{79AC5713-595B-4C9A-A3C4-41DFFBB9D796}.Release|Win32.Build.0 = Release|Win32
+		{828DB8A3-398A-4659-BB1B-8CAD4F83FBC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{828DB8A3-398A-4659-BB1B-8CAD4F83FBC0}.Debug|Win32.Build.0 = Debug|Win32
+		{828DB8A3-398A-4659-BB1B-8CAD4F83FBC0}.Release|Win32.ActiveCfg = Release|Win32
+		{828DB8A3-398A-4659-BB1B-8CAD4F83FBC0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{828DB8A3-398A-4659-BB1B-8CAD4F83FBC0} = {89401B5B-716E-4792-A3FE-66842BF88475}
+		{79AC5713-595B-4C9A-A3C4-41DFFBB9D796} = {A419D65C-786A-4252-AA38-F08F7DEA38CC}
+	EndGlobalSection
+EndGlobal
