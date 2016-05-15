@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1C768142-EB02-4E6B-B7F0-6075F2BF2368}</ProjectGuid>
-    <RootNamespace>d3dx11effect</RootNamespace>
+    <ProjectGuid>{53105483-FAF4-4AA4-A53D-4BAE7020D239}</ProjectGuid>
+    <RootNamespace>libMath</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -47,11 +47,9 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)Inc;$(ProjectDir)Binary;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -69,28 +67,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="d3dx11dbg.cpp" />
-    <ClCompile Include="d3dxGlobal.cpp" />
-    <ClCompile Include="EffectAPI.cpp" />
-    <ClCompile Include="EffectLoad.cpp" />
-    <ClCompile Include="EffectNonRuntime.cpp" />
-    <ClCompile Include="EffectReflection.cpp" />
-    <ClCompile Include="EffectRuntime.cpp" />
+    <ClCompile Include="MathUtility.cpp" />
+    <ClCompile Include="Matrix44.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector4.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Binary\EffectBinaryFormat.h" />
-    <ClInclude Include="Binary\EffectStateBase11.h" />
-    <ClInclude Include="Binary\EffectStates11.h" />
-    <ClInclude Include="Binary\SOParser.h" />
-    <ClInclude Include="Effect.h" />
-    <ClInclude Include="EffectLoad.h" />
-    <ClInclude Include="Inc\d3dx11dbg.h" />
-    <ClInclude Include="Inc\d3dx11effect.h" />
-    <ClInclude Include="Inc\d3dxGlobal.h" />
-    <ClInclude Include="pchfx.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="EffectVariable.inl" />
+    <ClInclude Include="MathUtility.h" />
+    <ClInclude Include="Matrix44.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
