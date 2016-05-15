@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="aldlist.cpp" />
+    <ClCompile Include="CWaves.cpp" />
+    <ClCompile Include="Framework.cpp" />
+    <ClCompile Include="LoadOAL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aldlist.h" />
+    <ClInclude Include="CWaves.h" />
+    <ClInclude Include="Framework.h" />
+    <ClInclude Include="LoadOAL.h" />
+  </ItemGroup>
+</Project>
