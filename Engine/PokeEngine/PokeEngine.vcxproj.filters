@@ -1,2 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="EngineTimer.h" />
+    <ClInclude Include="LoaderAssimp.h" />
+    <ClInclude Include="LogSystem.h" />
+    <ClInclude Include="PokeApp.h" />
+    <ClInclude Include="AudioSystem.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferMgrD3D11.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectSystemD3D11.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererD3D11.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderMgrD3D11.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationData.h">
+      <Filter>Scene\Model3D</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneData.h">
+      <Filter>Scene\Model3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Model3D.h">
+      <Filter>Scene\Model3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelData.h">
+      <Filter>Scene\Model3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneObject.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EngineTimer.cpp" />
+    <ClCompile Include="LoaderAssimp.cpp" />
+    <ClCompile Include="LogSystem.cpp" />
+    <ClCompile Include="PokeApp.cpp" />
+    <ClCompile Include="AudioSystem.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferMgrD3D11.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectSystemD3D11.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererD3D11.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderMgrD3D11.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Model3D.cpp">
+      <Filter>Scene\Model3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelData.cpp">
+      <Filter>Scene\Model3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneObject.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{e1b3d265-dc99-4659-b9f5-81ddd63b5945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{88930592-ec52-4824-a124-daf141ef2808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{c310e939-4ed6-4891-b081-fb5a4f3782fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{ea545026-b2b5-4a18-8041-0ac34bbc87a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Model3D">
+      <UniqueIdentifier>{6343ccc1-7c7d-4dc6-80d7-f3358eed6c5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
