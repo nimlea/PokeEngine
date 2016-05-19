@@ -52,6 +52,10 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreLinkEvent>
+      <Command>xcopy /y "$(SolutionDir)Libs\assimp\lib32\assimp.lib" "$(SolutionDir)Bin\$(Configuration)"
+xcopy /y "$(SolutionDir)Libs\assimp\lib32\assimpd.dll" "$(SolutionDir)Bin\$(Configuration)"</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
